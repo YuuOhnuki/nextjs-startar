@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Uvinavi Next.js Starter
 
-## Getting Started
+Production-ready Next.js 16 template pairing React 19, Tailwind CSS v4, and Shadcn UI components. Use this repository as a baseline for dashboards or SaaS products with opinionated linting, formatting, and type-safety defaults.
 
-First, run the development server:
+## ✨ Features
+
+- **Modern stack** – Next.js App Router, server components, and React 19 streaming support.
+- **UI primitives** – Shadcn UI components backed by Radix primitives and Lucide icons.
+- **DX guardrails** – ESLint (Core Web Vitals), Prettier + Tailwind plugin, and TypeScript strict mode.
+- **Responsive layout** – Ready-made marketing page sections showcasing how to compose components.
+- **Consistent tooling** – Single-command scripts for linting, formatting, and type checking.
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18.18+ or 20+
+- Package manager of your choice (examples use `pnpm`)
+
+### Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+git clone https://github.com/your-org/uvinavi-starter
+cd uvinavi-starter
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000) to see the starter interface.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📦 Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Command             | Description                                             |
+| ------------------- | ------------------------------------------------------- |
+| `pnpm dev`          | Run the Next.js development server.                     |
+| `pnpm build`        | Create an optimized production build.                   |
+| `pnpm start`        | Serve the production build locally.                     |
+| `pnpm lint`         | Lint all files with ESLint (fails on warnings).         |
+| `pnpm lint:fix`     | Automatically fix lint issues where possible.           |
+| `pnpm format`       | Format the codebase with Prettier and Tailwind sorting. |
+| `pnpm format:check` | Verify formatting without writing changes.              |
+| `pnpm typecheck`    | Run TypeScript checks in `--noEmit` mode.               |
 
-## Learn More
+## 🧱 Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+├─ app/
+│  ├─ layout.tsx         # Global layout, fonts, and navigation
+│  └─ page.tsx           # Marketing-style landing sections
+├─ components/
+│  ├─ index.ts           # Barrel exports for layout/sections/UI
+│  ├─ layout/            # Layout-level components (site header)
+│  ├─ sections/          # Hero, features, stack, tooling sections
+│  └─ ui/                # Shadcn UI primitives
+├─ hooks/                # Custom React hooks (e.g., responsive helpers)
+├─ lib/                  # Utilities and shared helpers
+└─ styles/               # Tailwind & global styles (see `app/globals.css`)
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+> Tailwind v4 configuration lives inside `app/globals.css` alongside theme tokens and variants.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🛠 Tooling & Configuration
 
-## Deploy on Vercel
+- **ESLint** – Configured via `eslint.config.mjs` with strict Core Web Vitals and TypeScript rules.
+- **Prettier** – `.prettierrc.json` aligns formatting style (semicolons, single quotes, Tailwind sorting).
+- **Prettier ignore** – `.prettierignore` excludes build artifacts and dependencies.
+- **TypeScript** – `tsconfig.json` declares `@/*` path aliases and strict compiler settings.
+- **Tailwind CSS** – PostCSS plugin pipeline using `@tailwindcss/postcss` and `tw-animate-css` utilities.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🧩 UI Overview
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `components/layout/site-header.tsx` – Sticky header with navigation anchors and GitHub CTA.
+- `components/sections/*` – Modular sections reused in `app/page.tsx` to showcase template content.
+- `components/ui/*` – Auto-generated Shadcn UI primitives ready for composition across the app.
+
+## ✅ Recommended Next Steps
+
+1. Replace placeholder copy (org name, GitHub URL) with your branding.
+2. Configure CI (GitHub Actions, Vercel, etc.) to run `pnpm lint`, `pnpm typecheck`, and `pnpm build`.
+3. Extend `components/sections` with your product-specific content or convert sections into dynamic data-driven components.
+
+## 📄 License
+
+This template is MIT licensed. Feel free to fork and adapt for commercial or open-source projects.

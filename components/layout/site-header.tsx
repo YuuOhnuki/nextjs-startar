@@ -40,7 +40,7 @@ export function SiteHeader(): ReactElement {
                     ))}
                 </nav>
                 <Link
-                    href="https://github.com/your-org/uvinavi-starter"
+                    href="https://github.com/YuuOhnuki/nextjs-startar"
                     className="hover:bg-muted rounded-md border px-3 py-1.5 text-sm font-medium transition"
                     target="_blank"
                     rel="noopener noreferrer"

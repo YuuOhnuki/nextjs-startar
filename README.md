@@ -15,31 +15,31 @@ Production-ready Next.js 16 template pairing React 19, Tailwind CSS v4, and Shad
 ### Prerequisites
 
 - Node.js 18.18+ or 20+
-- Package manager of your choice (examples use `pnpm`)
+- Package manager of your choice (examples use `bun`)
 
 ### Installation
 
 ```bash
-git clone https://github.com/your-org/uvinavi-starter
-cd uvinavi-starter
-pnpm install
-pnpm dev
+git clone https://github.com/YuuOhnuki/nextjs-startar
+cd nextjs-startar
+bun install
+bun dev
 ```
 
 Visit [http://localhost:3000](http://localhost:3000) to see the starter interface.
 
 ## 📦 Available Scripts
 
-| Command             | Description                                             |
-| ------------------- | ------------------------------------------------------- |
-| `pnpm dev`          | Run the Next.js development server.                     |
-| `pnpm build`        | Create an optimized production build.                   |
-| `pnpm start`        | Serve the production build locally.                     |
-| `pnpm lint`         | Lint all files with ESLint (fails on warnings).         |
-| `pnpm lint:fix`     | Automatically fix lint issues where possible.           |
-| `pnpm format`       | Format the codebase with Prettier and Tailwind sorting. |
-| `pnpm format:check` | Verify formatting without writing changes.              |
-| `pnpm typecheck`    | Run TypeScript checks in `--noEmit` mode.               |
+| Command                | Description                                             |
+| ---------------------- | ------------------------------------------------------- |
+| `bun dev`              | Run the Next.js development server.                     |
+| `bun run build`        | Create an optimized production build.                   |
+| `bun run start`        | Serve the production build locally.                     |
+| `bun run lint`         | Lint all files with ESLint (fails on warnings).         |
+| `bun run lint:fix`     | Automatically fix lint issues where possible.           |
+| `bun run format`       | Format the codebase with Prettier and Tailwind sorting. |
+| `bun run format:check` | Verify formatting without writing changes.              |
+| `bun run typecheck`    | Run TypeScript checks in `--noEmit` mode.               |
 
 ## 🧱 Project Structure
 

@@ -15,18 +15,16 @@ export function GettingStartedSection(): ReactElement {
                 <li className="bg-background flex flex-col gap-2 rounded-xl p-4 shadow-sm">
                     <span className="text-primary text-sm font-semibold tracking-wide uppercase">1. Clone</span>
                     <code className="bg-muted text-foreground rounded-md px-3 py-2 font-mono text-sm">
-                        git clone https://github.com/your-org/uvinavi-starter
+                        git clone https://github.com/YuuOhnuki/nextjs-startar
                     </code>
                 </li>
                 <li className="bg-background flex flex-col gap-2 rounded-xl p-4 shadow-sm">
                     <span className="text-primary text-sm font-semibold tracking-wide uppercase">2. Install</span>
-                    <code className="bg-muted text-foreground rounded-md px-3 py-2 font-mono text-sm">
-                        pnpm install
-                    </code>
+                    <code className="bg-muted text-foreground rounded-md px-3 py-2 font-mono text-sm">bun install</code>
                 </li>
                 <li className="bg-background flex flex-col gap-2 rounded-xl p-4 shadow-sm">
                     <span className="text-primary text-sm font-semibold tracking-wide uppercase">3. Start</span>
-                    <code className="bg-muted text-foreground rounded-md px-3 py-2 font-mono text-sm">pnpm dev</code>
+                    <code className="bg-muted text-foreground rounded-md px-3 py-2 font-mono text-sm">bun dev</code>
                 </li>
                 <li className="bg-background flex flex-col gap-2 rounded-xl p-4 shadow-sm">
                     <span className="text-primary text-sm font-semibold tracking-wide uppercase">
@@ -34,13 +32,13 @@ export function GettingStartedSection(): ReactElement {
                     </span>
                     <div className="grid gap-1">
                         <code className="bg-muted text-foreground rounded-md px-3 py-2 font-mono text-sm">
-                            pnpm lint
+                            bun run lint
                         </code>
                         <code className="bg-muted text-foreground rounded-md px-3 py-2 font-mono text-sm">
-                            pnpm format
+                            bun run format
                         </code>
                         <code className="bg-muted text-foreground rounded-md px-3 py-2 font-mono text-sm">
-                            pnpm typecheck
+                            bun run typecheck
                         </code>
                     </div>
                 </li>

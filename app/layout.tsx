@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
     title: 'Uvinavi Next.js Starter',
     description: 'Production-ready template featuring Shadcn UI and Tailwind CSS tooling.',
-    metadataBase: new URL('https://github.com/'),
+    metadataBase: new URL('https://github.com/YuuOhnuki/nextjs-startar'),
     openGraph: {
         title: 'Uvinavi Next.js Starter',
         description: 'Production-ready template featuring Shadcn UI and Tailwind CSS tooling.',

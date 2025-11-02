@@ -12,19 +12,19 @@ const TOOLING: ToolingItem[] = [
     {
         title: 'Formatting',
         description: 'Prettier with Tailwind CSS plugin ensures predictable class sorting and style.',
-        command: 'pnpm format',
+        command: 'bun run format',
         icon: <WorkflowIcon className="text-primary size-7" aria-hidden />,
     },
     {
         title: 'Linting',
         description: 'ESLint (Core Web Vitals) keeps Next.js best practices enforced in CI.',
-        command: 'pnpm lint',
+        command: 'bun run lint',
         icon: <Code2Icon className="text-primary size-7" aria-hidden />,
     },
     {
         title: 'Type Safety',
         description: 'TypeScript strict mode is enabled for early feedback on API regressions.',
-        command: 'pnpm typecheck',
+        command: 'bun run typecheck',
         icon: <PackageIcon className="text-primary size-7" aria-hidden />,
     },
 ];
